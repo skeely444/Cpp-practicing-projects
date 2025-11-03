@@ -2,19 +2,33 @@
 using namespace std;
 
 int main () {
-    cout << "Welcome to my first program. It's really simple and just checks if two numbers subtracted are equal to one." << endl;
+    cout << "Welcome to my second program. It's just a simple calculator you can try out. Enjoy!" << endl;
     cout << "Please enter your first number: ";
-    int firstNumber;
+    double firstNumber;
     cin >> firstNumber;
     cout << "Please enter your second number: ";
-    int secondNumber;
+    double secondNumber;
     cin >> secondNumber;
-    int result = firstNumber - secondNumber;
-    switch (result) {
-        case 1:
-        cout << "Congradsulations, the result is equal to 1";
-        break;
-           default:
-           cout << "Sorry, the result isn't 1";
+    cout << "Wich calculation would you like to preform?" << endl;
+    string calculation;
+    cin >> calculation;
+    double result;
+    if (calculation == "Subtract" || calculation == "subtract")
+    {
+        result = firstNumber - secondNumber;
+        cout << "Your result is: ";
+        cout << result;
+    } else if (calculation == "Add" || calculation == "add") {
+        result = firstNumber + secondNumber;
+        cout << "Your result is: ";
+        cout << result;
+    } else if (calculation == "devide" || calculation == "Devide") {
+        result = firstNumber / secondNumber;
+        cout << "Your result is: ";
+        cout << result;
+    } else if (calculation == "multiply" || calculation == "Multiply") {
+        result = firstNumber * secondNumber;
+        cout << "Your result is: ";
+        cout << result;
     }
 }
