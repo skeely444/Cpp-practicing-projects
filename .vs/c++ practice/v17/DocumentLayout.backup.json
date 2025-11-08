@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\code test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:code test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\Termutilities.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Termutilities.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "code test.cpp",
-              "DocumentMoniker": "C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\code test.cpp",
-              "RelativeDocumentMoniker": "code test.cpp",
-              "ToolTip": "C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\code test.cpp",
-              "RelativeToolTip": "code test.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Title": "Termutilities.cpp",
+              "DocumentMoniker": "C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\Termutilities.cpp",
+              "RelativeDocumentMoniker": "Termutilities.cpp",
+              "ToolTip": "C:\\Users\\mauro\\OneDrive\\Desktop\\my little projects\\c\u002B\u002B practice\\Termutilities.cpp",
+              "RelativeToolTip": "Termutilities.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-05T19:07:44.519Z",
+              "WhenOpened": "2025-11-08T11:58:54.519Z",
               "EditorCaption": ""
             }
           ]

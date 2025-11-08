@@ -2,12 +2,12 @@
 using namespace std;
 
 int main() {
-    cout << "Welcome to TermUtilities! TermUtilities is an opensource tool/game pack for your terminal. The uitlities aren't too advanced since this is a C++ practice project. If you got any problems make sure to report them on my Github and enjoy!" << endl;
-    cout << "Please select the program you would like." << endl << "TermUlator.exe" << endl << "SecretSquared.exe" << endl;
+    cout << "Welcome to TermUtilities! TermUtilities is an opensource tool/game pack for your terminal. The uitlities aren't too advanced since this is a C++ practice project. If you got any problems make sure to report them on my Github and enjoy!" << endl << endl;
+    cout << "Please select the program you would like." << endl << "TermUlator.exe" << endl << "SecretSquared.exe" << endl << "ShopUlator.exe" << endl;
     string choise;
     cin >> choise;
     if (choise == "SecretSquared.exe") {
-        cout << "Welcome to SecretSquared! SecretSquard is a small game played entirely in the terminal. It's really simple: you are standing in a square with X and t coordinates ranging from -25 to 25. Your goal is to find the hidden square by inputting around the map. Enjoy!" << endl;;
+        cout << "Welcome to SecretSquared! SecretSquard is a small game played entirely in the terminal. It's really simple: you are standing in a square with X and t coordinates ranging from -25 to 25. Your goal is to find the hidden square by inputting around the map. Enjoy!" << endl << endl;;
         int coordinateX = 0;
         int coordinateY = 0;
         int hiddenSquareXCoordinate = -15;
@@ -81,7 +81,11 @@ int main() {
             cout << "Your result is: ";
             cout << result;
         }
-    } /*else if (choise == "Memory++") {
-        c
-    }*/
+    } else if (choise == "ShopUlator.exe") {
+        cout << "Hello and welcome to the ShopUlator. It's just a small and basic shopping simulator so don't expect to much" << endl;
+        string shopAbleItems[] = {"Banana's", "Apple's", "Orange's", "Milk", "Butter", "Cake"};
+        for (string shopAble: shopAbleItems) {
+            cout << shopAble;
+        }
+    }
 }
