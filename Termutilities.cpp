@@ -7,13 +7,13 @@ int main() {
     string choise;
     cin >> choise;
     if (choise == "SecretSquared.exe") {
-        cout << "Welcome to SecretSquared! SecretSquard is a small game played entirely in the terminal. It's really simple: you are standing in a square with X and t coordinates ranging from -25 to 25. Your goal is to find the hidden square by inputting around the map. Enjoy!" << endl << endl;;
+        cout << "Welcome to SecretSquared! SecretSquard is a small game played entirely in the terminal. It's really simple: you are standing in a square with X and Y coordinates ranging from -25 to 25. Your goal is to find the hidden square by inputting around the map. Enjoy!" << endl << endl;;
         int coordinateX = 0;
         int coordinateY = 0;
         int hiddenSquareXCoordinate = -15;
         int hiddenSquareYCoordinate = 5;
         bool playing = true;
-        while (playing && coordinateX != hiddenSquareXCoordinate && coordinateY != hiddenSquareYCoordinate) {
+        while (playing && (coordinateX != hiddenSquareXCoordinate || coordinateY != hiddenSquareYCoordinate)) {
             cout << "Wich way would you like to move?" << endl;
             string wayToGo;
             cin >> wayToGo;
@@ -21,33 +21,33 @@ int main() {
                 cout << "how many steps would you like to go down?" << endl;;
                 int stepsDown;
                 cin >> stepsDown;
-                for (int stepsSet = 0; stepsSet <= stepsDown; coordinateY--) {
+                for (int stepsSet = 0; stepsSet < stepsDown; coordinateY--) {
                     stepsSet++;
-                    cout << "You are currently on Y coordinate:" << coordinateY << endl;
+                    cout << "You are currently on Y coordinate:" << coordinateY - 1 << endl;
                 }
             } else if (wayToGo == "up") {
                 cout << "how many steps would you like to go up?" << endl;
                 int stepsUp;
                 cin >> stepsUp;
-                for (int stepsSet = 0; stepsSet <= stepsUp; coordinateY++) {
+                for (int stepsSet = 0; stepsSet < stepsUp; coordinateY++) {
                     stepsSet++;
-                    cout << "You are currently on Y coordinate:" << coordinateY << endl;
+                    cout << "You are currently on Y coordinate:" << coordinateY + 1 << endl;
                 }
             } else if (wayToGo == "left") {
                 cout << "how many steps would you like to go to the left?" << endl;
                 int stepsLeft;
                 cin >> stepsLeft;
-                for (int stepsSet = 0; stepsSet <= stepsLeft; coordinateX--) {
+                for (int stepsSet = 0; stepsSet < stepsLeft; coordinateX--) {
                     stepsSet++;
-                    cout << "You are currently on X coordinate:" << coordinateX << endl;
+                    cout << "You are currently on X coordinate:" << coordinateX - 1 << endl;
                 }
             } else if (wayToGo == "right") {
                 cout << "how many steps would you like to go to the right?" << endl;
                 int stepsLeft;
                 cin >> stepsLeft;
-                for (int stepsSet = 0; stepsSet <= stepsLeft; coordinateX++) {
+                for (int stepsSet = 0; stepsSet < stepsLeft; coordinateX++) {
                     stepsSet++;
-                    cout << "You are currently on X coordinate:" << coordinateX << endl;
+                    cout << "You are currently on X coordinate:" << coordinateX + 1 << endl;
                 }
             }
         }
@@ -81,11 +81,12 @@ int main() {
             cout << "Your result is: ";
             cout << result;
         }
-    } else if (choise == "ShopUlator.exe") {
-        cout << "Hello and welcome to the ShopUlator. It's just a small and basic shopping simulator so don't expect to much" << endl;
-        string shopAbleItems[] = {"Banana's", "Apple's", "Orange's", "Milk", "Butter", "Cake"};
-        for (string shopAble: shopAbleItems) {
-            cout << shopAble;
-        }
+    } else if (choise == "SquareMatcher.exe") {
+        cout << "Hello and welcome to the SquareMatcher. In this game you must input to array indexes. If those indexes are equal to the same number, you get a point, otherwise you may continue." << endl;
+        int firstIndex[] = {5, 6, 9, 7, 3, 4, 1, 2, 8};
+        int secondIndex[] = {9, 7, 5, 6, 4, 3, 1, 2, 8};
+        cout << "Please enter the first index";
+        int *firstChosenIndex = firstIndex;
+        cout << firstChosenIndex;
     }
 }
