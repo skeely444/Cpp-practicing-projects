@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     cout << "Welcome to TermUtilities! TermUtilities is an opensource tool/game pack for your terminal. The uitlities aren't too advanced since this is a C++ practice project. If you got any problems make sure to report them on my Github and enjoy!" << endl << endl;
-    cout << "Please select the program you would like." << endl << "TermUlator.exe" << endl << "SecretSquared.exe" << endl << "ShopUlator.exe" << endl;
+    cout << "Please select the program you would like." << endl << "TermUlator.exe" << endl << "SecretSquared.exe" << endl << "EconomicalCalculator.exe" << endl << "UnitOverter.exe" << endl;
     string choise;
     cin >> choise;
     if (choise == "SecretSquared.exe") {
@@ -81,12 +81,23 @@ int main() {
             cout << "Your result is: ";
             cout << result;
         }
-    } else if (choise == "SquareMatcher.exe") {
-        cout << "Hello and welcome to the SquareMatcher. In this game you must input to array indexes. If those indexes are equal to the same number, you get a point, otherwise you may continue." << endl;
-        int firstIndex[] = {5, 6, 9, 7, 3, 4, 1, 2, 8};
-        int secondIndex[] = {9, 7, 5, 6, 4, 3, 1, 2, 8};
-        cout << "Please enter the first index";
-        int *firstChosenIndex = firstIndex;
-        cout << firstChosenIndex;
+    } else if (choise == "EconomicalCalculator.exe") {
+        cout << "Hello and welcome to the Economical Calculator. It's a basic program that calculates if you gained or losed money." << endl;
+        cout << "How much money did you make today?" << endl;
+        double moneyMade;
+        cin >> moneyMade;
+        cout << "How much money did you spend today?" << endl;
+        double moneySpend;
+        cin >> moneySpend;
+        double result = moneyMade - moneySpend;
+        if (result > 0) {
+            cout << "You gained " << result << "dollars today" << endl;
+        } else if (result = 0) {
+            cout << "You had a break even today." << endl;
+        } else if (result < 0) {
+            cout << "You lost " << result << "dollars today " << endl;
+        }
+    } else if (choise == "UnitOverter.exe") {
+        cout << "Welcome to UnitOverter. As the name suggests it is just a simple program that lets you convert units";
     }
 }
