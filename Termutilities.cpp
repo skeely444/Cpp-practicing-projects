@@ -3,7 +3,11 @@ using namespace std;
 
 int main() {
     cout << "Welcome to TermUtilities! TermUtilities is an opensource tool/game pack for your terminal. The uitlities aren't too advanced since this is a C++ practice project. If you got any problems make sure to report them on my Github and enjoy!" << endl << endl;
-    cout << "Please select the program you would like." << endl << "TermUlator.exe" << endl << "SecretSquared.exe" << endl << "EconomicalCalculator.exe" << endl << "UnitOverter.exe" << endl;
+    cout << "Please select the program you would like." << endl 
+    << "TermUlator.exe" << endl 
+    << "SecretSquared.exe" << endl 
+    << "EconomicalCalculator.exe" << endl 
+    << "S_A_D.exe" << endl;
     string choise;
     cin >> choise;
     if (choise == "SecretSquared.exe") {
@@ -91,13 +95,23 @@ int main() {
         cin >> moneySpend;
         double result = moneyMade - moneySpend;
         if (result > 0) {
-            cout << "You gained " << result << "dollars today" << endl;
+            cout << "You gained " << result << "euros today" << endl;
         } else if (result = 0) {
             cout << "You had a break even today." << endl;
         } else if (result < 0) {
-            cout << "You lost " << result << "dollars today " << endl;
+            cout << "You lost " << result << "euros today " << endl;
         }
-    } else if (choise == "UnitOverter.exe") {
-        cout << "Welcome to UnitOverter. As the name suggests it is just a simple program that lets you convert units";
+    } else if (choise == "S_A_D.exe") {
+        cout << "Welcome to S_A_D. This program can be used to calculate the optimal price per unit for your supply and demand system. Enjoy!";
+        double prizePoints[] = {0.00, 2.50, 5.00, 7.50, 10.00, 12.50, 15.00, 17.50, 20.00, 22.50, 25.00, 27.50, 30.00, 32.50, 35.00, 37.50, 40.00};
+        cout << "How many prize points are you targetting? ";
+        int prizePointsTragetting;
+        cin >> prizePointsTragetting;
+        int offeringForPrizePoint[17];
+        for (int i = 0; i < prizePointsTragetting; i++) {
+            offeringForPrizePoint[i] = 0;
+            cout << "how many products would you like to sell for " << prizePoints[i] << " euros?" << endl;
+            cin >> offeringForPrizePoint[i];
+        }
     }
 }
