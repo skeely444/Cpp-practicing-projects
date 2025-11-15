@@ -103,15 +103,26 @@ int main() {
         }
     } else if (choise == "S_A_D.exe") {
         cout << "Welcome to S_A_D. This program can be used to calculate the optimal price per unit for your supply and demand system. Enjoy!";
-        double prizePoints[] = {0.00, 2.50, 5.00, 7.50, 10.00, 12.50, 15.00, 17.50, 20.00, 22.50, 25.00, 27.50, 30.00, 32.50, 35.00, 37.50, 40.00};
+        double prizePoints[] = {0.00, 2.50, 5.00, 7.50, 10.00, 12.50, 15.00, 17.50, 20.00, 22.50, 25.00, 27.50, 30.00, 32.50, 35.00, 37.50, 40.00, 42.50, 45.00, 47.50, 50.00, 52.50, 55.00, 57.50, 60.00, 62.50, 65.00, 67.50, 70.00, 72.50, 75.00};
         cout << "How many prize points are you targetting? ";
         int prizePointsTragetting;
         cin >> prizePointsTragetting;
-        int offeringForPrizePoint[17];
+        int offeringForPrizePoint[31];
+        int askingForPrizePoints[31];
         for (int i = 0; i < prizePointsTragetting; i++) {
             offeringForPrizePoint[i] = 0;
-            cout << "how many products would you like to sell for " << prizePoints[i] << " euros?" << endl;
+            cout << "How many products would you like to sell for " << prizePoints[i] << " euros?" << endl;
             cin >> offeringForPrizePoint[i];
+        }
+        for (int i = 0; i < prizePointsTragetting; i++) {
+            askingForPrizePoints[i] = 0;
+            cout << "How many products does your audience ask for " << prizePoints[i] << " euros?" << endl;
+            cin >> askingForPrizePoints[i];
+        }
+        for (int i = 0; i < prizePointsTragetting; i++) {
+            if (offeringForPrizePoint[i] == askingForPrizePoints[i]) {
+                cout << "The market is in balance when asking " << prizePoints[i] << " euros for " << askingForPrizePoints[i] << " items." << endl;
+            }
         }
     }
 }
